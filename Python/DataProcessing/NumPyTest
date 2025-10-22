@@ -1,0 +1,17 @@
+import numpy as np
+
+# Tạo ma trận đồng nhất (identity matrix)
+def identity_matrix(n):
+    return np.eye(n)
+
+# Chuẩn hóa dữ liệu ảnh (giá trị 0–255 → 0–1)
+def normalize_image(image):
+    return image / 255.0
+
+# Ví dụ chạy
+# Tạo ma trận 3×3 ngẫu nhiên với giá trị pixel từ 0 đến 255, mô phỏng ảnh grayscale nhỏ.
+
+img = np.random.randint(0, 256, (3, 3))
+print("Ảnh gốc:\n", img)
+print("Ảnh chuẩn hóa:\n", normalize_image(img))
+print("Ma trận đồng nhất 3x3:\n", identity_matrix(3))
