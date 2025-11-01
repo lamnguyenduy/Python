@@ -1,0 +1,16 @@
+import pandas as pd
+
+# Đọc dữ liệu (giả sử có cột 'City' và 'Temperature')
+df = pd.read_csv(r"E:\WORK\STUDY\Python\DataProcessing\temperature.csv")
+print(df.head())
+
+# Lọc dữ liệu
+hanoi_data = df[df['City'] == 'Hanoi']
+
+# Trung bình nhiệt độ
+avg_temp = df['Temperature'].mean()
+print("🌡 Nhiệt độ trung bình:", avg_temp)
+
+# Group by
+grouped = df.groupby('City')['Temperature'].mean()
+print(grouped)

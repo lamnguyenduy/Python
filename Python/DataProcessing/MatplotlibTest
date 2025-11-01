@@ -1,0 +1,12 @@
+import matplotlib.pyplot as plt
+import pandas as pd
+
+df = pd.read_csv(r"E:\WORK\STUDY\Python\DataProcessing\temperature.csv")
+
+plt.scatter(df["Date"], df["Temperature"], label="Temperature")
+plt.title("Thống kê nhiệt độ theo ngày")
+plt.xlabel("Ngày")
+plt.ylabel("Nhiệt độ (°C)")
+plt.legend()
+plt.grid(True)
+plt.show()
