@@ -1,3 +1,4 @@
+// main XXX
 from utils.log_helper import count_keyword_in_log, list_file_lines, list_files_in_folder, list_py_files
 
 import os
