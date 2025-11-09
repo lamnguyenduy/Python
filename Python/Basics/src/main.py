@@ -3,6 +3,7 @@ from utils.log_helper import count_keyword_in_log, list_file_lines, list_files_i
 
 import os
 // main change
+// main add
 def main():
     while True:
         folder = input("Nhập đường dẫn thư mục: ").strip()
