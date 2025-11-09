@@ -10,6 +10,7 @@ import os
 // test change
 
 def main():
+    // test rebase
     while True:
         folder = input("Nhập đường dẫn thư mục: ").strip()
         if not os.path.isdir(folder):
