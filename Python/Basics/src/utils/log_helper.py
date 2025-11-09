@@ -1,7 +1,7 @@
 import os
 import datetime
 import csv
-
+// main change
 print("📂 Thư mục hiện tại:", os.getcwd())
 
 def count_keyword_in_log(filename, keyword):
